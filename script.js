@@ -23,3 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+
+  document.getElementById('name').addEventListener('click', function() {
+    var audio = new Audio('/ersin-kiymaz.mp3');
+    audio.play();
+});
