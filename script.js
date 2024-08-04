@@ -24,7 +24,23 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  document.getElementById('name').addEventListener('click', function() {
-    var audio = new Audio('/ersin-kiymaz.mp3');
-    audio.play();
+
+
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // ... (keep your existing code for tooltips here)
+
+    // Add sound play functionality
+    const playButton = document.getElementById('playSound');
+    playButton.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent any default button behavior
+        console.log('Play button clicked');
+        const audio = new Audio('/ersin-kiymaz.mp3');
+        audio.play().then(() => {
+            console.log('Audio started playing');
+        }).catch((error) => {
+            console.error('Error playing audio:', error);
+        });
+    });
 });
