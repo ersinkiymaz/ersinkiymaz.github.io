@@ -128,6 +128,14 @@ button{
     color: none;
     border: none;
     background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button img{
+   width: 1.5rem;
+   height: auto;
 }
 
 button:hover{
