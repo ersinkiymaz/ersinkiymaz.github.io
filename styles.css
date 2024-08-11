@@ -131,11 +131,12 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer ;
 }
 
 button img{
-   width: 1.5rem;
-   height: auto;
+    width: 1.5rem;
+    height: auto;
 }
 
 button:hover{
