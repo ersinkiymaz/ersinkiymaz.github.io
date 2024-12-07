@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+
 
   document.addEventListener('DOMContentLoaded', () => {
     // ... (keep your existing code for tooltips here)
