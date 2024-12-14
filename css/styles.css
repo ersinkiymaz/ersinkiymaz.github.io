@@ -1,0 +1,29 @@
+:root{
+    --primary : black;
+    --secondary : grey;
+    --link : blue;
+    --link-visited : purple;
+    --background : white;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root{
+    --primary : white;
+    --secondary : grey;
+    --link : cyan;
+    --link-visited : fuchsia;
+    --background : black;
+}}
+
+body{
+    background: var(--background);
+    color: var(--primary);
+}
+
+a{
+    color: var(--link);
+}
+
+a:visited{
+    color: var(--link-visited);
+}
